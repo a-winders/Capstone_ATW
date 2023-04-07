@@ -1,4 +1,47 @@
 body {
-    background-color: blue;
-    /* background-color: #E50914; */
+    background-color: #bb332d;
+    margin: 0;
+}
+
+h1 {
+    background-color: #bb332d;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    padding: 0.5rem;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 200px;
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+.nav{
+    display: flex;
+    gap: 1rem;
+}
+
+.link {
+    background: none;
+    border: none;
+    text-decoration: none;
+    color:#bb332d;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 0;
+}
+
+.link:hover {
+    color: black;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
 }
