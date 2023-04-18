@@ -11,6 +11,14 @@
     scroll-behavior: smooth;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  text-emphasis-color: white;
+}
+
 /* Style the navbar */
 #navbar {
     overflow: hidden;
@@ -56,24 +64,26 @@
     padding: 16px;
   }
   
-  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
-  .sticky {
+ /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+ .sticky {
     position: fixed;
     top: 0;
     width: 100%;
   }
   
-  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-  .sticky + .content {
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
     padding-top: 60px;
   }
 
+/* Body */  
 body {
     background-color: #aa3e30;
 }
 
+/* Footer */
 footer {
-    color: white;
+    color: black;
     margin: 20px auto;
 }
 
