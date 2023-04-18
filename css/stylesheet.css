@@ -1,47 +1,79 @@
-body {
-    background-color: #bb332d;
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
 }
 
-h1 {
-    background-color: #bb332d;
+/* Style the navbar */
+#navbar {
+    overflow: hidden;
+    background-color: #aa3e30;
     display: flex;
     flex-wrap: wrap;
-    align-items: baseline;
-    padding: 0.5rem;
+    align-items: center;
     justify-content: space-between;
-}
+    overflow: auto;
+  }
 
-.logo {
-    width: 200px;
-    margin-top: 16px;
-    cursor: pointer;
-}
-
-.nav{
-    display: flex;
-    gap: 1rem;
-}
-
-.link {
-    background: none;
-    border: none;
+  /* Navbar links */
+#navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
     text-decoration: none;
-    color:#bb332d;
-    font-family: inherit;
-    font-size: inherit;
-    cursor: pointer;
-    padding: 0;
-}
+  }
 
-.link:hover {
-    color: black;
-}
-
-.dropdown {
+  ul li {
     position: relative;
+    margin: 0 20px;
+    list-style: none;
+    display: inline-block;
+    padding: 14px;
+    font-size: 17px;
+  }
+
+  ul li a{
+  text-decoration: none; 
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  }
+
+  ul li a:hover {
+     background-color: rgb(129, 123, 123);
+  }
+
+  /* Page content */
+.content {
+    padding: 16px;
+  }
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+body {
+    background-color: #aa3e30;
 }
 
-.dropdown-menu {
-    position: absolute;
+footer {
+    color: white;
+    margin: 20px auto;
 }
+
