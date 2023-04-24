@@ -22,7 +22,7 @@
 /* Style the navbar */
 #navbar {
     overflow: hidden;
-    background-color: #aa3e30;
+    background-color: #bb332d;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -78,7 +78,7 @@
 
 /* Body */  
 body {
-    background-color: #aa3e30;
+    background-color: #bb332d;
 }
 
 /* Footer */
