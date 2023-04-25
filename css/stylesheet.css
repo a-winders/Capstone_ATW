@@ -75,6 +75,7 @@
 .sticky + .content {
     padding-top: 60px;
   }
+  
 
 /* Body */  
 body {
@@ -85,5 +86,8 @@ body {
 footer {
     color: black;
     margin: 20px auto;
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0%;
 }
 
